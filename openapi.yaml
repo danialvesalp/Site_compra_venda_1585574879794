@@ -725,6 +725,17 @@ components:
     - x-skaffolder-id: 5e81f13c06e8563f3229c9a5
       x-skaffolder-name: Site_compra_venda_db
   x-skaffolder-page:
+    - x-skaffolder-id: 5e84c9678763035aac7a4b1d
+      x-skaffolder-name: COMPRAR
+      x-skaffolder-url: /comprar
+      x-skaffolder-template: 
+      x-skaffolder-resource: 
+      x-skaffolder-services: 
+      x-skaffolder-nesteds: 
+      x-skaffolder-links:
+        - 5e823c8306e8563f3229cd17
+        - 5e823c4e06e8563f3229cd0b
+      x-skaffolder-roles: []
     - x-skaffolder-id: 5e823c8306e8563f3229cd11
       x-skaffolder-name: CategoriaEdit
       x-skaffolder-url: /categorias/{id}
@@ -784,20 +795,9 @@ components:
       x-skaffolder-nesteds: 
       x-skaffolder-links: 
       x-skaffolder-roles: []
-    - x-skaffolder-id: 5e84c9678763035aac7a4b1d
-      x-skaffolder-name: QUERO COMPRAR
-      x-skaffolder-url: /querocomprar
-      x-skaffolder-template: 
-      x-skaffolder-resource: 
-      x-skaffolder-services: 
-      x-skaffolder-nesteds: 
-      x-skaffolder-links:
-        - 5e823c8306e8563f3229cd17
-        - 5e823c4e06e8563f3229cd0b
-      x-skaffolder-roles: []
     - x-skaffolder-id: 5e84ca1c8763035aac7a4b21
-      x-skaffolder-name: QUERO VENDER
-      x-skaffolder-url: /querovender
+      x-skaffolder-name: VENDER
+      x-skaffolder-url: /vender
       x-skaffolder-template: 
       x-skaffolder-resource: 
       x-skaffolder-services: 

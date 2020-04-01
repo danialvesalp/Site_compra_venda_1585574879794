@@ -36,12 +36,12 @@ import { CanActivate, RouterModule, Routes } from '@angular/router';
 /* START MY VIEWS IMPORT */
 // Do not edit this comment content, it will be overwritten in next Skaffolder generation
 import { HomeComponent} from './pages/home/home.component';
+import { COMPRARComponent} from './pages/comprar/comprar.component';
 import { CategoriaEditComponent} from './pages/categoria-edit/categoria-edit.component';
 import { CategoriaListComponent} from './pages/categoria-list/categoria-list.component';
 import { ProdutoEditComponent} from './pages/produto-edit/produto-edit.component';
 import { ProdutoListComponent} from './pages/produto-list/produto-list.component';
-import { QUERO COMPRARComponent} from './pages/quero comprar/quero comprar.component';
-import { QUERO VENDERComponent} from './pages/quero vender/quero vender.component';
+import { VENDERComponent} from './pages/vender/vender.component';
 
 /* END MY VIEWS IMPORT */
 
@@ -60,13 +60,13 @@ const routes: Routes = [
 
     /* START MY VIEWS */
 
+    { path: 'comprar',  loadChildren: './pages/comprar/comprar.module#COMPRARModule' , canActivate: [AuthGuard] },
     { path: 'categorias/:id',  loadChildren: './pages/categoria-edit/categoria-edit.module#CategoriaEditModule' , canActivate: [AuthGuard] },
     { path: 'categorias',  loadChildren: './pages/categoria-list/categoria-list.module#CategoriaListModule' , canActivate: [AuthGuard] },
     { path: 'home',  loadChildren: './pages/home/home.module#HomeModule' , canActivate: [AuthGuard] },
     { path: 'produtos/:id',  loadChildren: './pages/produto-edit/produto-edit.module#ProdutoEditModule' , canActivate: [AuthGuard] },
     { path: 'produtos',  loadChildren: './pages/produto-list/produto-list.module#ProdutoListModule' , canActivate: [AuthGuard] },
-    { path: 'querocomprar',  loadChildren: './pages/quero comprar/quero comprar.module#QUERO COMPRARModule' , canActivate: [AuthGuard] },
-    { path: 'querovender',  loadChildren: './pages/quero vender/quero vender.module#QUERO VENDERModule' , canActivate: [AuthGuard] },
+    { path: 'vender',  loadChildren: './pages/vender/vender.module#VENDERModule' , canActivate: [AuthGuard] },
 
  /* END MY VIEWS */
 
